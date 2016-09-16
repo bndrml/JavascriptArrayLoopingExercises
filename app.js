@@ -12,3 +12,11 @@ var filterNumbers = function(x) {
 	});
 	console.log(newArr2);
 }
+
+var createStringItems = function (arr,str) {
+	var newArr3 = [];
+	arr.forEach(function(item){
+		newArr3.push(str);
+	});
+	console.log(newArr3);
+}
