@@ -8,15 +8,19 @@ var updateArrayItems = function (x) {
 
 var filterNumbers = function(x) {
 	var newArr2 = x.filter(function(item) {
-		return isNaN(item) ? false : item;
+		//return isNaN(item) ? false : item;
+		return !isNaN(item);
 	});
 	console.log(newArr2);
 }
-
 var createStringItems = function (arr,str) {
-	var newArr3 = [];
+	var newArr3=[];
 	arr.forEach(function(item){
-		newArr3.push(str);
+		var innerArr=[];
+		for(i=0;i<item;i++) {
+			innerArr.push(str);
+		}
+		newArr3.push(innerArr);
 	});
 	console.log(newArr3);
 }
