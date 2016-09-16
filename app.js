@@ -20,3 +20,11 @@ var createStringItems = function (arr,str) {
 	});
 	console.log(newArr3);
 }
+
+var checkingFurkan = function (arr) {
+	var answer = arr.some(function (item) {
+		return item === "furkan";
+	});
+	console.log(answer);
+
+}
